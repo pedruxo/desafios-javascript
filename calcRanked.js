@@ -15,7 +15,7 @@ function ranking() {
         rl.question("Digite a quantidade de vitórias: ", (quant_vitorias) => {
             vitorias = parseInt(quant_vitorias);
 
-            if (vitorias < 0) {
+            if (vitorias < 0) { //Evita consistências
                 console.log("O número de vitórias não pode ser negativo. Tente novamente.\n");
                 inputVitorias();
             }
